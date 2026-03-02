@@ -11,7 +11,7 @@
     <div class="top-bar">
     </div>
     
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <header>
         <div class="navbar-container">
             <div class="logo">
@@ -30,20 +30,49 @@
         </div>
     </header>
 
-    <!-- Hero Section with Welcome Message -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to<br/><span>Mona Heights Primary School</span></h1>
-            <p>''Virtue et Labore''</p>
-            <a href="#" class="btn-yellow">Learn More</a>
-        </div>
-    </section>
+    <!-- Carousel Section -->
+<section class="carousel">
+    <div class="carousel-container">
 
-    <!-- Quick Links Section -->
+        <div class="slide active">
+            <img src="images/front_gate.jpg" alt="School Building">
+            <div class="slide-caption">
+                <h2>Welcome to Mona Heights Primary School</h2>
+                <p>"Virtue et Labore"</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/quiz_champions.jpg" alt="Students Learning">
+            <div class="slide-caption">
+                <h2>Home of Champions</h2>
+                <p>Empowering Students for Success</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/graduation_ceremony.jpg" alt="School Event">
+            <div class="slide-caption">
+                <h2>The School of Choice</h2>
+                <p>Learning, Growing, Achieving Together</p>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Quick Links Section (To be changed until further notice)-->
     <section class="quick-links container">
         <div class="card">
-            <h3>About Us</h3>
-            <p>Learn more about our school's history, mission, and values.</p>
+            <h3>Admissions</h3>
+            <p>Learn more about how to apply to our school.</p>
         </div>
         <div class="card">
             <h3>News & Events</h3>
@@ -64,7 +93,7 @@
                     a nurturing and stimulating environment where students can 
                     thrive academically and socially.
                 </p><br/>
-                <a href="#" class="btn-yellow">Learn More</a>
+                <a href="#" class="btn-green">Learn More</a>
             </div>
             <div class="image">
                 <img src="images/mhps_students.jpg" alt="Mona Students" id="students" width="300" height="250" />
@@ -129,6 +158,33 @@
     <footer>
         <p>&copy; 2026 Mona Heights Primary School. All rights reserved.</p>
     </footer>
-    
+
+    <!-- JavaScript for Carousel -->
+    <script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            dots[i].classList.remove('active');
+        });
+
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+        showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 4000); // Change slide every 4 seconds
+</script>
+
 </body>
 </html>
