@@ -61,8 +61,8 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
-    padding-right: 30px;
+    gap: 20px;
+    padding-right: 10px;
 }
 
 nav ul li a {
@@ -83,7 +83,6 @@ nav ul li a::after {
     height: 3px;
     left: 0;
     bottom: -5px;
-    background: #f4c300;
     transition: width 0.3s ease;
 }
 
@@ -93,6 +92,20 @@ nav ul li a:hover {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+/* Buttons */
+.btn-yellow {
+    background: #f4c300;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-yellow:hover {
+    /* background: #d9ab00; */
 }
 
 .hero {
@@ -164,12 +177,62 @@ nav ul li a:hover::after {
 .academic img {
     width: 100%;
     border-radius: 10px;
-    margin-right: 300px;
+    margin-right: 100px;
 }
 
 .text {
     text-align: left;
-    margin-right: 150px;
+    margin-right: 100px;
+}
+
+.resources {
+    background: #f9f9f9;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.section-title {
+    color: #0d5c2f;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.resource-cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resource-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    border-top: 6px solid #0d5c2f;
+}
+
+.resource-card h3 {
+    color: #0d5c2f;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    margin-bottom: 20px;
+}
+
+/* Hover effect */
+.resource-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-top: 6px solid #f4c300;
 }
 
 footer {
