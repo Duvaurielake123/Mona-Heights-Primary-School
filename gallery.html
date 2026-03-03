@@ -31,7 +31,94 @@
     </header>
      <section class="hero">
         <div class="hero-content">
+            <h1>School <span>Gallery</span></h1>
+        <p>Capturing moments of excellence and growth</p>
         </div>
     </section>
+
+    <!-- Albums Section -->
+<section class="albums-section fade-in">
+    <div class="container">
+        <h2 class="section-title">Photo Albums</h2>
+
+        <div class="album-grid">
+
+            <div class="album-card" onclick="showAlbum('sports')">
+                <img src="images/sports_day_prev_events.jpg" alt="Sports Day">
+                <div class="album-title">Sports Day 2026</div>
+            </div>
+
+            <div class="album-card" onclick="showAlbum('graduation')">
+                <img src="images/graduation_ceremony.jpg" alt="Graduation">
+                <div class="album-title">Graduation Ceremony</div>
+            </div>
+
+            <div class="album-card" onclick="showAlbum('classroom')">
+                <img src="images/class4.jpeg" alt="Classroom">
+                <div class="album-title">Classroom Activities</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Album Display Section -->
+<section class="photo-display container">
+
+    <!-- Sports Album -->
+    <div class="photo-album" id="sports">
+        <h2>Sports Day 2026</h2>
+        <div class="photo-grid">
+            <img src="albums/sports1.jpg">
+            <img src="albums/sports2.jpg">
+            <img src="albums/sports3.jpg">
+            <img src="albums/sports4.jpg">
+        </div>
+    </div>
+
+    <!-- Graduation Album -->
+    <div class="photo-album" id="graduation">
+        <h2>Graduation Ceremony</h2>
+        <div class="photo-grid">
+            <img src="albums/grad1.jpg">
+            <img src="albums/grad2.jpg">
+            <img src="albums/grad3.jpg">
+            <img src="albums/grad4.jpg">
+        </div>
+    </div>
+
+    <!-- Classroom Album -->
+    <div class="photo-album" id="classroom">
+        <h2>Classroom Activities</h2>
+        <div class="photo-grid">
+            <img src="images/class1.jpeg">
+            <img src="images/class2.jpeg">
+            <img src="images/class3.jpeg">
+            <img src="images/class4.jpeg">
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Mona Heights Primary School | All Rights Reserved</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+function showAlbum(albumId) {
+    const albums = document.querySelectorAll('.photo-album');
+    albums.forEach(album => {
+        album.style.display = "none";
+    });
+
+    document.getElementById(albumId).style.display = "block";
+    window.scrollTo({
+        top: document.getElementById(albumId).offsetTop - 100,
+        behavior: "smooth"
+    });
+}
+</script>
+
 </body>
 </html>

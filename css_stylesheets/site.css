@@ -508,5 +508,75 @@ form input:focus, form textarea:focus {
     color: #0d5c2f;
 }
 
+/* Albums Section */
+.albums-section {
+    padding: 70px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
 
+.album-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.album-card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.album-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.album-title {
+    background: #0d5c2f;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.album-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Photo Display */
+.photo-album {
+    display: none;
+    margin-top: 60px;
+}
+
+.photo-album h2 {
+    color: #0d5c2f;
+    margin-bottom: 30px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
 
