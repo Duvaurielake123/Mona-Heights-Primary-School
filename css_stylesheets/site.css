@@ -101,7 +101,7 @@ nav ul li a:hover::after {
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 .btn-yellow:hover {
@@ -114,7 +114,7 @@ nav ul li a:hover::after {
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 .btn-green:hover {
@@ -214,7 +214,7 @@ nav ul li a:hover::after {
 }
 
 .hero {
-    background: url('../images/reading_zone.jpg') no-repeat center center/cover;
+    background: url('../images/mhps_teachers.jpg') no-repeat center center/cover;
     color: white;
     height: 500px;
     display: flex;
@@ -243,6 +243,7 @@ nav ul li a:hover::after {
     display: flex;
     gap: 20px;
     margin: 50px auto;
+    color: white;
 }
 
 .card {
@@ -257,6 +258,10 @@ nav ul li a:hover::after {
 .card h3 {
     margin-bottom: 10px;
     color: #f4c300;
+}
+
+.card p {
+    color: white;
 }
 
 .academic {
@@ -280,8 +285,9 @@ nav ul li a:hover::after {
 }
 
 .academic img {
-    width: 100%;
-    border-radius: 10px;
+    width: 380px;
+    height: 350px;
+    border-radius: 200px;
     margin-right: 100px;
 }
 
@@ -358,4 +364,121 @@ form input, form textarea {
 form input:focus, form textarea:focus {
     outline: none;
     border: 2px solid #0d5c2f;
+}
+
+.leadership-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.leader-card {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    border-top: 6px solid #0d5c2f;
+}
+
+.leader-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #f4c300;
+}
+
+.leader-card h3 {
+    color: #0d5c2f;
+    margin-bottom: 5px;
+}
+
+.leader-card h4 {
+    color: #f4c300;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.leader-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Hover effect */
+.leader-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-top: 6px solid #f4c300;
+}
+
+/* About Page Styling */
+.about-content {
+    padding: 70px 0;
+    background: #ffffff;
+}
+
+/* Headings */
+.about-content h2 {
+    color: #0d5c2f;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* Yellow Accent Line */
+.about-content h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    height: 25px;
+    width: 5px;
+    background: #f4c300;
+    border-radius: 3px;
+}
+
+/* Paragraph Styling */
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Highlight Important Text */
+.about-content strong {
+    color: #0d5c2f;
+}
+
+/* List Styling */
+.about-content ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.about-content ul li {
+    margin-bottom: 8px;
+    color: #333;
+    position: relative;
+}
+
+/* Custom bullet */
+.about-content ul li::marker {
+    color: #f4c300;
+    font-weight: bold;
+}
+
+/* Section Divider */
+.about-content hr {
+    margin: 50px 0;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #0d5c2f, #f4c300);
 }
