@@ -214,7 +214,7 @@ nav ul li a:hover::after {
 }
 
 .hero {
-    background: url('../images/mhps_teachers.jpg') no-repeat center center/cover;
+    background: url('../images/mhps_students.jpeg') no-repeat center center/cover;
     color: white;
     height: 500px;
     display: flex;
@@ -269,16 +269,25 @@ nav ul li a:hover::after {
     padding: 60px 0;
 }
 
+.academic-section {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 60px;
+    background-color: #f4c300;
+    border-radius: 100px;
+}
+
 .academic-content {
     display: flex;
     gap: 40px;
     align-items: center;
 }
 
-.academic h2 [
+/* .academic h2 {
     color: #0d5c2f;
     margin-bottom: 20px;
-]
+} */
 
 .academic p {
     margin-bottom: 20px;
@@ -467,12 +476,18 @@ form input:focus, form textarea:focus {
     margin-bottom: 8px;
     color: #333;
     position: relative;
+    transition: transform 0.3s ease;
 }
 
 /* Custom bullet */
 .about-content ul li::marker {
     color: #f4c300;
     font-weight: bold;
+}
+
+.about-content ul li:hover {
+    transform: translateX(8px);
+    color: #0d5c2f;
 }
 
 /* Section Divider */
@@ -482,3 +497,16 @@ form input:focus, form textarea:focus {
     height: 2px;
     background: linear-gradient(to right, #0d5c2f, #f4c300);
 }
+
+.school-quote {
+    margin: 30px 0;
+    padding: 25px;
+    background: #f4f4f4;
+    border-left: 6px solid #f4c300;
+    font-style: italic;
+    font-size: 18px;
+    color: #0d5c2f;
+}
+
+
+
