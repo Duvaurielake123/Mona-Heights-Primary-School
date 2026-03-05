@@ -651,3 +651,50 @@ form input:focus, form textarea:focus {
     background: #0d5c2f;
     transform: translateY(-3px);
 }
+
+/* Calendar Section */
+
+.calendar-section {
+    padding: 60px 10%;
+    background: #f7f7f7;
+}
+
+.calendar-section h2 {
+    text-align: center;
+    color: #1e7c3a;
+    margin-bottom: 30px;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Event Modal */
+
+.event-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+}
+
+.event-modal-content {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-btn {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
