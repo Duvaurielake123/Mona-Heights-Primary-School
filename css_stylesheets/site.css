@@ -244,13 +244,13 @@ nav ul li a:hover::after {
     gap: 20px;
     margin: 50px auto;
     color: white;
+    align-items: center;
 }
 
 .card {
     background: #0d5c2f;
     color: white;
     padding: 25px;
-    flex: 1;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -260,8 +260,26 @@ nav ul li a:hover::after {
     color: #f4c300;
 }
 
-.card p {
+.card img {
+    width: 320px;
+    height: 400px;
+}
+
+.cards {
+    background: #0d5c2f;
     color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cards h3 {
+    margin-bottom: 10px;
+    color: #f4c300;
+}
+
+.cards p {
+    padding: 10px;
 }
 
 .academic {
@@ -697,4 +715,16 @@ form input:focus, form textarea:focus {
     float: right;
     font-size: 22px;
     cursor: pointer;
+}
+
+.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.media-caption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
 }
