@@ -22,7 +22,7 @@ body {
     
     width: 100%;
     max-width: 1200px;
-    margin: 35px;
+    margin: 45px;
 }
 
 .containers {
@@ -279,6 +279,7 @@ nav ul li a:hover::after {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     height: 200px;
+    align-items: center;
 }
 
 .cards h3 {
