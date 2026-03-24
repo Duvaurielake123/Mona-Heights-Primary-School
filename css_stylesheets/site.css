@@ -280,6 +280,7 @@ nav ul li a:hover::after {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     height: 200px;
     align-items: center;
+    width: 100%;
 }
 
 .cards h3 {
