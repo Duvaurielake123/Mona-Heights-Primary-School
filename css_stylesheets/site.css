@@ -59,12 +59,15 @@ header {
     align-items: center;
     justify-content: space-between;
     font-family:'Times New Roman', Times, serif;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .logo img {
-
     height: 150px;
     width: 450px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul {
@@ -72,6 +75,7 @@ nav ul {
     display: flex;
     gap: 20px;
     padding-right: 10px;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -252,6 +256,7 @@ nav ul li a:hover::after {
     margin: 40px;
     color: white;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -260,6 +265,7 @@ nav ul li a:hover::after {
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    flex: 1 1 300px;
 }
 
 .card h3 {
@@ -275,7 +281,7 @@ nav ul li a:hover::after {
 .cards {
     background: #0d5c2f;
     color: white;
-    flex : 1;
+    flex : 1 1 300px;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -304,8 +310,9 @@ nav ul li a:hover::after {
 
 .academic-content {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .academic p {
@@ -319,9 +326,17 @@ nav ul li a:hover::after {
     margin-right: 100px;
 }
 
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 200px;
+    margin-right: 100px;
+}
+
 .text {
     text-align: left;
     margin-right: 100px;
+    flex: 1 1 300px;
 }
 
 .resources {
@@ -782,13 +797,34 @@ form input:focus, form textarea:focus {
 
 @media (max-width:768px){
 
-.principal-container{
-    flex-direction:column;
-    text-align:center;
-}
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.principal-container img{
-    width:220px;
-}
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .academic-content {
+        flex-direction: column;
+    }
+
+    .quick-links {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .principal-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .principal-container img{
+        width:220px;
+    }
 
 }
