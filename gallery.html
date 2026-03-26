@@ -79,6 +79,7 @@
        
         <!-- Sports Album -->
         <div class="photo-album" id="sports">
+            <span class="close-btn" onclick="closeAlbums()">✖</span>
             <h2>Sports Day 2026</h2>
             <div class="photo-grid">
                 <img src="images/sports_day_1.jpeg">
@@ -104,6 +105,7 @@
 
         <!-- Classroom Album -->
         <div class="photo-album" id="classroom">
+            <span class="close-btn" onclick="closeAlbums()">✖</span>
             <h2>Classroom Activities</h2>
             <div class="photo-grid">
                 <img src="images/class1.jpeg">
@@ -119,6 +121,7 @@
 
         <!-- Smartroom Album -->
         <div class="photo-album" id="smartroom">
+            <span class="close-btn" onclick="closeAlbums()">✖</span>
             <h2>Smartroom Grand Opening</h2>
             <div class="photo-grid">
                 <img src="images/smartroom_digicel.jpeg">
@@ -150,6 +153,7 @@
             
         <!-- Educational Trips Album -->
         <div class="photo-album" id="trips">
+            <span class="close-btn" onclick="closeAlbums()">✖</span>
             <h2>Educational Trips</h2>
             <div class="photo-grid">
                 <img src="images/edu_trips_1.jpeg">
@@ -162,6 +166,7 @@
 
         <!-- School Meals Day Album -->
         <div class="photo-album" id="meals">
+            <span class="close-btn" onclick="closeAlbums()">✖</span>
             <h2>School Meals Day</h2>
             <div class="photo-grid">
                 <img src="images/meals_day_2.jpeg">
@@ -190,6 +195,18 @@
         document.getElementById(albumId).style.display = "block";
         window.scrollTo({
             top: document.getElementById(albumId).offsetTop - 100,
+            behavior: "smooth"
+        });
+    }
+    function closeAlbums() {
+        const albums = document.querySelectorAll('.photo-album');
+        albums.forEach(album => {
+            album.style.display = "none";
+        });
+
+        // Optional: scroll back up to albums section
+        window.scrollTo({
+            top: 0,
             behavior: "smooth"
         });
     }

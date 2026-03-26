@@ -27,7 +27,7 @@ body {
 }
 
 .containers {
-    width: 60%;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
@@ -293,6 +293,8 @@ nav ul li a:hover::after {
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     flex: 1 1 300px;
+    flex-wrap: wrap;
+
 }
 
 .card h3 {
@@ -819,7 +821,7 @@ form input:focus, form textarea:focus {
 
 .principal-text h2{
     font-size:32px;
-    color:#1e7c3a;
+    color:green;
     margin-bottom:15px;
 }
 
@@ -834,7 +836,7 @@ form input:focus, form textarea:focus {
 
 .activity-table {
     align-items: center;
-    width: 50%;
+    width: 75%;
     border-collapse: collapse;
     margin-top: 20px;
     margin-bottom: 40px;
