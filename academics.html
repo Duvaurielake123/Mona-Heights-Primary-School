@@ -119,46 +119,70 @@
                 sports and clubs to encourage creativity, teamwork, 
                 and leadership development.
             </p>
-            <div>
-                <h2>Sports</h2>
-                    <ul>
-                        <li>Football</li>
-                        <li>Netball</li>
-                        <li>Track & Field</li>
-                        <li>Gymnastics</li>
-                        <li>Swimming</li>
-                        <li>Hockey</li>
-                    </ul>
-            </div>
-            <div>
-                
-                <h2>Clubs</h2>
-                    <ul>
-                        <li>Art Club</li>
-                        <li>4H Club</li>
-                        <li>Builders Club</li>
-                        <li>Boy's Scouts</li>
-                        <li>Brownies</li>
-                        <li>K-Kids Club</li>
-                        <li>Culture Club</li>
-                        <li>Debate Club</li>
-                        <li>Sewing Club</li>
-                        <li>Entrepreneur Club</li>
-                        <li>Inegrity Club</li>
-                        <li>Spelling Club</li>
-                        <li>Sports Club</li>
-                        <li>Science and Technology Club</li>
-                        <li>Sign Language Club</li>
-                        <li>Reading Club</li>
-                        <li>Media and Communication Club</li>
-                    </ul>
-            </div>
+            <h2>Sports</h2>
+<table class="activity-table">
+    <thead>
+        <tr>
+            <th>Sports Offered</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Football</td><td>Netball</td></tr>
+        <tr><td>Track & Field</td><td>Gymnastics</td></tr>
+        <tr><td>Swimming</td><td>Hockey</td></tr>
+    </tbody>
+</table>
+
+<h2>Clubs</h2>
+<table class="activity-table">
+    <thead>
+        <tr>
+            <th>Clubs Offered</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Art Club</td><td>4H Club</td></tr>
+        <tr><td>Builders Club</td><td>Boy's Scouts</td></tr>
+        <tr><td>Brownies</td><td>K-Kids Club</td></tr>
+        <tr><td>Culture Club</td><td>Debate Club</td></tr>
+        <tr><td>Sewing Club</td><td>Entrepreneur Club</td></tr>
+        <tr><td>Integrity Club</td><td>Spelling Club</td></tr>
+        <tr><td>Sports Club</td><td>Science & Technology Club</td></tr>
+        <tr><td>Sign Language Club</td><td>Reading Club</td></tr>
+        <tr><td>Media & Communication Club</td><td></td></tr>
+    </tbody>
+</table>
         </div>
     </section>
 
     <footer>
         <p>© 2026 Mona Heights Primary School | All rights reserved</p>
     </footer>
+
+    <button id="backToTop">↑</button>
     
+    <script>
+        const btn = document.getElementById("backToTop");
+
+        // Show button when scrolling down
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Scroll to top when clicked
+        btn.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
+
 </body>
 </html>

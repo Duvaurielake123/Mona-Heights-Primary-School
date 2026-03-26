@@ -90,7 +90,7 @@
     </section>
 
     <!-- Quick Links Section -->
-    <section class="quick-links container">
+    <section class="quick-links">
         <div class="cards">
             <h3>Admissions</h3>
             <p>Learn more about the application process and how to register at our school.</p>
@@ -169,7 +169,7 @@
     </section>
 
     <!-- Bottom Highlights -->
-    <section class="highlights container">
+    <section class="highlights">
         <div class="cards">
             <h3>Our Core Subjects</h3>
             <p>Explore our comprehensive curriculum designed to meet the needs 
@@ -187,6 +187,8 @@
     <footer>
         <p>&copy; 2026 Mona Heights Primary School. All rights reserved.</p>
     </footer>
+
+    <button id="backToTop">↑</button>
 
     <!-- JavaScript for Carousel -->
     <script>
@@ -213,6 +215,27 @@
         }
 
         setInterval(nextSlide, 4000); // Change slide every 4 seconds
+    </script>
+
+    <script>
+        const btn = document.getElementById("backToTop");
+
+        // Show button when scrolling down
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Scroll to top when clicked
+        btn.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
     </script>
 
 </body>

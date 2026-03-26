@@ -18,11 +18,8 @@ body {
     to { opacity: 1; }
 }
 
-section {
-    padding: 60px 0;
-}
+/* CONTAINERS*/
 
-/* Container */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -36,7 +33,8 @@ section {
     text-align: center;
 }
 
-/* Top Bar */
+/* HEADER / NAVBAR */
+
 .top-bar {
     background: #0d5c2f;
     font-family:'Times New Roman', Times, serif;
@@ -55,9 +53,6 @@ header {
     padding: 5px 0;
     border-bottom: 4px solid #f4c300;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .navbar-container {
@@ -113,7 +108,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Buttons */
+/* BUTTONS */
 .btn-yellow {
     background: #f4c300;
     color: black;
@@ -140,6 +135,31 @@ nav ul li a:hover::after {
 .btn-green:hover {
     background: #083d1f;
 }
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #0d5c2f;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background: #f4c300;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* CAROUSEL */
 
 .carousel {
     position: relative;
@@ -173,7 +193,6 @@ nav ul li a:hover::after {
     z-index: 1;
 }
 
-/* Slide Overlay */
 .slide::after {
     content: "";
     position: absolute;
@@ -184,7 +203,6 @@ nav ul li a:hover::after {
     left: 0;
 }
 
-/* Slide Caption */
 .slide-caption {
     position: absolute;
     top: 50%;
@@ -206,7 +224,6 @@ nav ul li a:hover::after {
     font-size: 18px;
 }
 
-/* Dots */
 .carousel-dots {
     position: absolute;
     bottom: 20px;
@@ -230,7 +247,8 @@ nav ul li a:hover::after {
     background-color: #f4c300;
 }
 
-/*Hero Section*/
+/*HERO SECTION*/
+
 .hero {
     background: url('../images/mhps_students.jpeg') no-repeat center center/cover;
     color: white;
@@ -257,7 +275,8 @@ nav ul li a:hover::after {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Quicklinks and Cards */
+/* QUICKLINKS AND CARDS */
+
 .quick-links, .highlights {
     display: flex;
     gap: 25px;
@@ -271,8 +290,8 @@ nav ul li a:hover::after {
     background: #0d5c2f;
     color: #333;
     padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     flex: 1 1 300px;
 }
 
@@ -294,129 +313,12 @@ nav ul li a:hover::after {
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     min-height: 200px;
-    width: 90%;
+    width: 100%;
 }
 
 .cards h3 {
     margin-bottom: 10px;
     color: #f4c300;
-}
-
-
-.academic {
-    background:#f5f5f5;
-}
-
-.academic-section {
-    background: white;
-    display: flex;
-    padding: 30px;
-    align-items: center;
-    margin-bottom: 40px;
-    background-color: #f4c300;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-
-.academic-content {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.academic p {
-    margin-bottom: 20px;
-}
-
-.academic img {
-    width: 380px;
-    height: 350px;
-    border-radius: 200px;
-    margin-right: 100px;
-}
-
-.responsive-img {
-    width: 100%;
-    height: auto;
-    border-radius: 200px;
-    margin-right: 100px;
-}
-
-.text {
-    text-align: left;
-    margin-right: 0;
-    flex: 1 1 300px;
-}
-
-.resources {
-    background: #f9f9f9;
-    padding: 70px 0;
-    text-align: center;
-}
-
-.section-title {
-    color: #0d5c2f;
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.section-subtitle {
-    margin-bottom: 40px;
-    color: #555;
-}
-
-.resource-cards {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.resource-card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    width: 300px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.4s ease;
-    border-top: 6px solid #0d5c2f;
-}
-
-.resource-card h3 {
-    color: #0d5c2f;
-    margin-bottom: 10px;
-}
-
-.resource-card p {
-    margin-bottom: 20px;
-}
-
-/* Hover effect */
-.resource-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    border-top: 6px solid #f4c300;
-}
-
-footer {
-    background: #0d5c2f;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 60px;
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form input:focus, form textarea:focus {
-    outline: none;
-    border: 2px solid #0d5c2f;
 }
 
 .leadership-cards {
@@ -468,6 +370,131 @@ form input:focus, form textarea:focus {
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     border-top: 6px solid #f4c300;
 }
+
+/* ACADEMIC */
+
+.academic {
+    background:#f5f5f5;
+}
+
+.academic-section {
+    background: white;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #f4c300;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.academic-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.academic p {
+    margin-bottom: 20px;
+}
+
+.academic img {
+    width: 380px;
+    height: 350px;
+    border-radius: 200px;
+    margin-right: 100px;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 200px;
+    margin-right: 100px;
+}
+
+.text {
+    text-align: left;
+    margin-right: 0;
+    flex: 1 1 300px;
+}
+
+/* RESOURCES */
+
+.resources {
+    background: #f9f9f9;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.section-title {
+    color: #0d5c2f;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.resource-cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resource-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    border-top: 6px solid #0d5c2f;
+}
+
+.resource-card h3 {
+    color: #0d5c2f;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    margin-bottom: 20px;
+}
+
+.resource-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-top: 6px solid #f4c300;
+}
+
+/* FOOTER */
+
+footer {
+    background: #0d5c2f;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+/* RESPONSIVE */
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border: 2px solid #0d5c2f;
+}
+
+/* CONTENT */
 
 /* About Page Styling */
 .about-content {
@@ -805,6 +832,36 @@ form input:focus, form textarea:focus {
     margin-bottom:20px;
 }
 
+.activity-table {
+    align-items: center;
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.activity-table th {
+    background: #0d5c2f;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.activity-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.activity-table tr:hover {
+    background: #f4f6f9;
+}
+
 @media (max-width:768px){
 
     nav ul {
@@ -842,7 +899,7 @@ form input:focus, form textarea:focus {
     }
 
     .carousel {
-        height: 50vh;
+        height: 250px;
     }
 
     .slide-caption h2 {
