@@ -926,3 +926,9 @@ form input:focus, form textarea:focus {
         flex-direction: column;
         text-align: center;
     }
+
+    .text {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}   
