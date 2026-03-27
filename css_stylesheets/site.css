@@ -64,7 +64,7 @@ header {
 }
 
 .logo img {
-    height: 125px;
+    height: 145px;
     max-width: 450px;
     display: flex;
     flex-wrap: wrap;
@@ -401,16 +401,9 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
 }
 
-.academic img {
+.responsive-img {
     width: 380px;
     height: 350px;
-    border-radius: 200px;
-    margin-right: 100px;
-}
-
-.responsive-img {
-    width: 70%;
-    height: 200px;
     border-radius: 200px;
     margin-right: 100px;
 }
@@ -419,6 +412,7 @@ nav ul li a:hover::after {
     text-align: left;
     margin-right: 0;
     flex: 1 1 300px;
+    width: 380px;
 }
 
 /* RESOURCES */
@@ -920,7 +914,13 @@ form input:focus, form textarea:focus {
     }
 
     .logo img {
-        width: 200px;
+        width: 350px;
+        height: 125px;
+    }
+
+    .responsive-img {
+        width: 100%;
+        margin-right: 0;
     }
 
 }
