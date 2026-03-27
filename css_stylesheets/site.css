@@ -479,7 +479,7 @@ footer {
 /* RESPONSIVE */
 
 form input, form textarea {
-    width: 80%;
+    width: 85%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -699,7 +699,7 @@ form input:focus, form textarea:focus {
     display: inline-block;
     margin-right: 15px;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     color: white;
     text-decoration: none;
     font-weight: bold;
