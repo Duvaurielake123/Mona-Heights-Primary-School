@@ -29,7 +29,6 @@ body {
 .containers {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -405,11 +404,12 @@ nav ul li a:hover::after {
     width: 380px;
     height: 350px;
     border-radius: 200px;
-    margin-right: 100px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .text {
-    text-align: left;
+    text-align:center;
     margin-right: 0;
     flex: 1 1 300px;
     width: 380px;
@@ -901,7 +901,7 @@ form input:focus, form textarea:focus {
     }
 
     .container {
-        width: 95%;
+        width: 100%;
     }
 
     .carousel {
