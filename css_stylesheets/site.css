@@ -80,7 +80,7 @@ nav ul {
 }
 
 nav ul li a {
-    background:#0d5c2f;
+    background:#138444;
     border-radius: 15px;
     padding: 10px 10px;
     font-size: 20px;
@@ -948,6 +948,7 @@ form input:focus, form textarea:focus {
         flex-direction: column;
         margin-top: 10px;
         text-align: center;
+        width: 280px;
     }
 
     .academic-content .container {
