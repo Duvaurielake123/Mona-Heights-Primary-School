@@ -946,7 +946,8 @@ form input:focus, form textarea:focus {
 
     .text {
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 10px;
+        text-align: center;
     }
 
     .academic-content .container {
@@ -954,15 +955,10 @@ form input:focus, form textarea:focus {
         align-items: center;
     }
 
-    .academic-content .container img {
+    .responsive-img {
         flex-direction: column;
         width: 300px;
         height: 300px;
-    }
-
-    .map-container {
-        flex-direction: column;
-        width: 100%;
     }
 
     form input, form textarea {
