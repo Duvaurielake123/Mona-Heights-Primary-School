@@ -80,9 +80,9 @@ nav ul {
 }
 
 nav ul li a {
-    background:#138444;
+    background:#007c36;
     border-radius: 15px;
-    padding: 10px 10px;
+    padding: 7px 7px;
     font-size: 20px;
     text-decoration: none;
     color:black;
@@ -879,6 +879,10 @@ form input:focus, form textarea:focus {
 
 @media (max-width:768px){
 
+    .top-bar .container {
+        justify-content: center;
+    }
+
     nav ul {
         justify-content: center;   
         flex-direction: row;
@@ -887,6 +891,7 @@ form input:focus, form textarea:focus {
 
     .navbar-container {
         flex-direction: column;
+        text-align: center;
     }
 
     .academic-content {
