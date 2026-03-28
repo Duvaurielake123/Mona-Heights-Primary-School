@@ -41,13 +41,12 @@ body {
     background: #0d5c2f;
     font-family:'Times New Roman', Times, serif;
     color: white;
-    padding: 5px 0;
+    padding: 5px;
     font-size: 18px;
 }
 
 .top-bar .container {
     display: flex;
-    justify-content: flex-end;
 }
 
 header {
