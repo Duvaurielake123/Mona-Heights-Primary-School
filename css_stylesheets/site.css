@@ -921,6 +921,7 @@ form input:focus, form textarea:focus {
 
     .card {
         flex-direction: column;
+        padding: 7px;
     }
 
     .principal-container{
