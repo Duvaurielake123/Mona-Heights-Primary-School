@@ -430,6 +430,10 @@ nav ul li a:hover::after {
     background: #f9f9f9;
     padding: 70px 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-title {
@@ -590,6 +594,8 @@ form input:focus, form textarea:focus {
     padding: 70px 0;
     background: #f9f9f9;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .album-grid {
@@ -962,6 +968,11 @@ form input:focus, form textarea:focus {
     }
 
     .academic-content .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resources .container {
         flex-direction: column;
         align-items: center;
     }
