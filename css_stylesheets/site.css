@@ -952,6 +952,12 @@ form input:focus, form textarea:focus {
         align-items: center;
     }
 
+    .academic-content .container img {
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+    }
+
     .map-container {
         flex-direction: column;
         width: 100%;
