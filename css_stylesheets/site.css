@@ -923,14 +923,12 @@ form input:focus, form textarea:focus {
     }
 
     .about-content {
-        margin: 15px;
         text-align: center;
     }
 
     .container, .containers {
         width: 90%;
         text-align: center;
-        padding: 5px;
     }
 
     .carousel {
