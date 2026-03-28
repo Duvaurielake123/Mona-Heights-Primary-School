@@ -24,12 +24,13 @@ body {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .containers {
     width: 100%;
-    max-width: 800px;
+    height: 100%;
+    max-width: 900px;
     text-align: center;
     align-items: center;
 }
@@ -921,7 +922,12 @@ form input:focus, form textarea:focus {
         width:220px;
     }
 
-    .container {
+    .about-content {
+        margin: 15px;
+        text-align: center;
+    }
+
+    .container, .containers {
         width: 90%;
         text-align: center;
     }
