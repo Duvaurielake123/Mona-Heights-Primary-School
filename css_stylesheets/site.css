@@ -11,6 +11,7 @@ body {
     background-color: #f4f6f9;
     color: #333;
     animation: pageFade 0.4s ease-in;
+    justify-content: center;
 }
 
 @keyframes pageFade {
@@ -30,6 +31,7 @@ body {
     width: 100%;
     max-width: 800px;
     text-align: center;
+    align-items: center;
 }
 
 /* HEADER / NAVBAR */
@@ -283,6 +285,7 @@ nav ul li a:hover::after {
     color: white;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -313,8 +316,8 @@ nav ul li a:hover::after {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    min-height: 200px;
     width: 100%;
+    height: 215px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -391,6 +394,7 @@ nav ul li a:hover::after {
     background-color: #f4c300;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    justify-content: center;
 }
 
 .academic-content {
@@ -499,7 +503,8 @@ form input:focus, form textarea:focus {
 /* About Page Styling */
 .about-content {
     background: #ffffff;
-    margin: 0 auto;
+    margin: 15px;
+    justify-content: center;
 }
 
 /* Headings */
@@ -752,6 +757,9 @@ form input:focus, form textarea:focus {
 /* Admission Page Style */
 .mark {
     padding: 2%;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .step {
@@ -760,6 +768,7 @@ form input:focus, form textarea:focus {
     border-radius: 8px;
     transition: transform 0.3s;
     margin: 1%;
+    width: 100%;
 }
 
 .step:hover {
@@ -891,7 +900,8 @@ form input:focus, form textarea:focus {
     }
 
     .cards {
-        width: 100%;
+        flex-direction: column;
+        width: 90%;
         text-align: center;
     }
 
@@ -905,7 +915,8 @@ form input:focus, form textarea:focus {
     }
 
     .container {
-        width: 100%;
+        width: 90%;
+        text-align: center;
     }
 
     .carousel {
@@ -938,5 +949,15 @@ form input:focus, form textarea:focus {
 
     .academic-content .container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form input, form textarea {
+        width: 100%;
     }
 }   
