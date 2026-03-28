@@ -894,7 +894,7 @@ form input:focus, form textarea:focus {
         text-align: center;
     }
 
-    .quick-links {
+    .quick-links, .highlights {
         flex-direction: column;
         text-align: center;
     }
