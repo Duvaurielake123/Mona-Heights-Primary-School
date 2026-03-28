@@ -892,6 +892,8 @@ form input:focus, form textarea:focus {
     .academic-content {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .quick-links, .highlights {
